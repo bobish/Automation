@@ -1,0 +1,74 @@
+1. Bastrop add R before property Id
+===============================================================
+2. Denton add "DEN" after the property id
+===============================================================
+3. Montgomery, Fortbend, Hays, Williamson Check for .000000 in tyler technologies files, 
+===============================================================
+
+4. Bexar - Sub div changes abs_subdv_cd
+
+	if($county_a == "Bexar")
+	{
+		if (preg_match('/^[AS]\d{5}$/', $abs_subdv_cd))
+		{
+			$abs_subdv_cd = substr($cad_geo_id, 0, 9);
+		}					
+	}
+===============================================================	
+FortBend , check for different exemption file along with Raw data and do changes as per email from David having subject "Fort Bend - Exemption File" May 25 2023
+	
+Hello Bobish and Shivani,
+
+I have not had a response from Fort Bend about my request for an exemption file with the O65 exemption listed.
+
+I took  look a the file and I did find a pattern… 
+and so  I checked the accounts on the tax office website to confirm..
+I was able to figure out the pattern help me determine the property has an Over65 exemption.
+
+So for the Fort Bend Exemption file,
+
+•	If an R# is listed on the exemption file with a HS (Hms) 
+AND
+•	The R# is listed again 
+AND
+•	with a BLANK field
+•	This means this property also has an OA (OVER65) exemption
+
+Are you able to apply this in code/logic and “force” in an (OA) Over65 in the blank Field?
+
+If there is an 3rd line with extra blank field – lets ignore that for now. (example R135355)
+
+===============================================================	
+
+
+Cap loss exemptions to be added to Tyler tech whenever caploss > 0
+
+=======================
+
+Ownership issue tyler
+
+-======================
+
+Do not import PP and Mineral
+
+-======================
+
+Ownership Calculations only---!!
+
+===============================
+
+tarrant ownership set to 100
+
+================================
+
+All scripts states to be Texas not TX
+
+=================================
+
+
+
+
+
+
+
+
